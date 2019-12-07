@@ -1,7 +1,7 @@
 const initialState = {
   copyMe: "Remember to copy me!",
   counter: 0,
-  time: 15,
+  time: 60,
   reset: false
 };
 

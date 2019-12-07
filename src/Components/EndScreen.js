@@ -14,13 +14,21 @@ class EndScreen extends Component {
       return <GameScreen />;
     } else
       return (
-        <div style={{ marginTop: "200px" }}>
+        <div
+          style={{
+            marginTop: "200px",
+            backgroundColor: "white",
+            display: "inline-block",
+            padding: "100px",
+            borderRadius: "20px"
+          }}
+        >
           <h1>Game Over</h1>
           <h4>Your Score:{this.props.ctr}</h4>
           <button
             onClick={this.handleClick}
             type="button"
-            class="btn btn-outline-success"
+            class="btn btn-primary rounded-pill btn-lg"
             style={{ marginTop: "40px" }}
           >
             Play Again

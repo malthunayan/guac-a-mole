@@ -28,7 +28,16 @@ class GameScreen extends Component {
       return <EndScreen />;
     } else
       return (
-        <div style={{ marginTop: "200px" }}>
+        <div
+          style={{
+            marginTop: "200px",
+            backgroundColor: "white",
+            display: "inline-block",
+            padding: "50px",
+            borderRadius: "20px",
+            marginBottom: "200px"
+          }}
+        >
           <h1>Guac-A-Mole</h1>
           <h4>
             Time:
@@ -42,8 +51,8 @@ class GameScreen extends Component {
             </span>
           </h4>
           <h4>Score:{this.props.ctr}</h4>
-          <div class="container" class="ml-a mr-a mt-5">
-            <div class="row" style={{ marginLeft: "450px" }}>
+          <div class="container" class="mr-5 mt-5">
+            <div class="row" style={{ marginLeft: "30px" }}>
               {/* <img src={Avocado} alt="Logo" width="200" height="180" />
             <img src={Empty} alt="Logo" width="220" height="180" />
             <img src={Taco} alt="Logo" width="250" height="190" /> */}
@@ -60,7 +69,7 @@ class GameScreen extends Component {
                 score={() => this.IncreaseScore}
               />
             </div>
-            <div class="row" style={{ marginLeft: "540px" }}>
+            <div class="row" style={{ marginLeft: "100px" }}>
               {/* <img src={Empty} alt="Logo" width="220" height="180" /> */}
               <Circle
                 x={Math.floor(Math.random() * 4)}
