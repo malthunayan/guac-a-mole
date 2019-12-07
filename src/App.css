@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background: #000;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+i {
+  background: white !important;
+  border-radius: 100px !important;
+  font-size: 25px !important;
+  text-align: center !important;
+  margin-right: 10px !important;
+  border-radius: 100% !important;
+  display: inline-block !important;
+  padding: 10px;
+}
+
+img {
+  display: block;
+}
+.blinking {
+  animation: blinkingText 0.5s infinite;
+}
+@keyframes blinkingText {
+  0% {
+    color: red;
+  }
+  49% {
+    color: transparent;
+  }
+  50% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: red;
+  }
+}
